@@ -50,7 +50,7 @@ const urlFor = (source: SanityImageSource) =>
         ? createImageUrlBuilder({ projectId, dataset }).image(source)
         : null;
 
-const options = { next: { revalidate: 30 } };
+const options = { next: { revalidate: 5 } };
 
 export default async function SitePostPage({
     params,

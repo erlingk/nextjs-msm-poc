@@ -32,7 +32,7 @@ const SITE_POSTS_QUERY = `*[
   ),
 } | order(effectivePublishedAt desc)[0...12]`;
 
-const options = { next: { revalidate: 30 } };
+const options = { next: { revalidate: 5 } };
 
 export default async function SitePostsPage({
     params,
